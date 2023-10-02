@@ -6,8 +6,8 @@ import (
 	"strings"
 )
 
-// extractUPIAddress extracts UPI address from transaction descrpiption
-func extractUPIAddress(input string) (string, error) {
+// ExtractUPIAddress extracts UPI address from transaction descrpiption
+func ExtractUPIAddress(input string) (string, error) {
 	if !strings.Contains(input, "UPI-") {
 		return "", fmt.Errorf("not a UPI transaction")
 	}
